@@ -1,0 +1,171 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body {
+  @apply font-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-sans;
+}
+
+.page {
+  @apply border-8 border-gray-300 min-h-screen;
+}
+
+.masthead {
+  @apply p-8 pb-12 border-b border-gray-300 mb-16;
+}
+
+.masthead__inner {
+  @apply mx-auto;
+}
+
+.nav {
+  @apply flex items-center justify-between;
+}
+
+.nav__item {
+  @apply px-6 text-base;
+}
+
+.nav__item + .nav__item {
+  @apply text-center;
+}
+
+.nav__item + .nav__item + .nav__item {
+  @apply text-right;
+}
+
+.nav__link {
+  @apply inline-block no-underline text-base text-black;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  @apply underline;
+}
+
+.nav__icon {
+  @apply block w-6 h-6 text-gray-800 fill-current;
+}
+
+.logo {
+  @apply inline-block no-underline text-gray-800;
+}
+
+.logo__img {
+  @apply block w-16 h-10;
+}
+
+@screen lg {
+  .logo__img {
+    @apply w-24 h-20;
+  }
+}
+
+.content {
+  @apply max-w-lg mx-auto p-8 mb-16 text-justify;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.content p {
+  @apply text-base font-normal leading-normal mb-4;
+}
+
+@screen lg {
+  .content p {
+    @apply text-xl;
+  }
+}
+
+.lede,
+.content .lede {
+  @apply text-xl italic leading-normal mb-4;
+}
+
+@screen lg {
+  .lede,
+  .content .lede {
+    @apply text-3xl;
+  }
+}
+
+.content h2 {
+  @apply text-base font-normal uppercase py-4 mb-2;
+}
+
+@screen lg {
+  .content h2 {
+    @apply text-xl;
+  }
+}
+
+.content ul,
+.content ol {
+  @apply block;
+}
+
+.content li {
+  @apply flex items-center;
+}
+
+.bullet {
+  @apply h-6 w-6 mr-2 flex-shrink-0;
+}
+
+.bullet__border {
+  @apply text-gray-300 fill-current;
+}
+
+.bullet__tick {
+  @apply text-yellow-500 fill-current;
+}
+
+.team {
+  @apply bg-gray-100 p-8 py-16;
+}
+
+.people {
+  @apply flex flex-wrap mx-auto text-center justify-center;
+}
+
+.person {
+  @apply py-8 px-16 mb-4;
+}
+
+.person__img {
+  @apply block mx-auto mb-6 w-20 h-20 rounded-full;
+}
+
+.person__name {
+  @apply mb-2 text-base font-normal;
+}
+
+@screen lg {
+  .person__name {
+    @apply text-xl;
+  }
+}
+
+.person__title {
+  @apply block italic;
+}
+
+.footer {
+  @apply p-8 text-center;
+}
+
+@screen lg {
+  .footer {
+    @apply py-16;
+  }
+}
