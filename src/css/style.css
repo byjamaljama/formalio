@@ -115,7 +115,7 @@ h4 {
 }
 
 .content li {
-  @apply flex items-center py-4;
+  @apply flex items-center py-6;
 }
 
 .bullet {
@@ -144,6 +144,7 @@ h4 {
 
 .person__img {
   @apply block mx-auto mb-6 w-20 h-20 rounded-full;
+  filter: grayscale(100%);
 }
 
 .person__name {
