@@ -115,7 +115,7 @@ h4 {
 }
 
 .content li {
-  @apply flex items-center py-6;
+  @apply flex items-center py-4;
 }
 
 .bullet {
