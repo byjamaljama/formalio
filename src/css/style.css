@@ -61,12 +61,12 @@ h4 {
 }
 
 .logo__img {
-  @apply block w-16 h-10;
+  @apply block w-16 h-16;
 }
 
 @screen lg {
   .logo__img {
-    @apply w-24 h-20;
+    @apply w-24 h-24;
   }
 }
 
